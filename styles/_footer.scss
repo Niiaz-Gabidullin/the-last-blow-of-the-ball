@@ -1,0 +1,266 @@
+.footer {
+  padding: 60px 0;
+  padding-bottom: 100px;
+  background: url(../images/trainers/bgImage.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  // .footer__wrapper
+
+  &__wrapper {
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba($color: $colorDarkBlue, $alpha: 0.8);
+    padding: 50px;
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    color: $colorLightBlue;
+    a {
+      color: $colorLightBlue;
+      transition: 0.3s;
+      display: flex;
+
+      &:hover {
+        transform: scale(1.05);
+        color: $colorMiddleBlue;
+      }
+    }
+    i {
+      margin-right: 20px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  // .footer__contacts-title
+
+  &__contacts-title {
+    margin-bottom: 10px;
+    font-size: 42px;
+  }
+
+  // .footer__contacts-phone
+
+  &__contacts-phone {
+  }
+
+  // .footer__contacts-email
+
+  &__contacts-email {
+  }
+
+  // .footer__contacts-link
+
+  &__contacts-link {
+  }
+
+  // .footer__map
+
+  &__map {
+    margin-top: 20px;
+    display: flex;
+    border: 4px solid $colorMiddleBlue;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 10px 0;
+    padding-bottom: 100px;
+    background: url(../images/trainers/bgImage.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    // .footer__wrapper
+
+    &__wrapper {
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba($color: $colorDarkBlue, $alpha: 0.8);
+      padding: 10px;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: space-between;
+      font-size: 24px;
+      color: $colorLightBlue;
+      margin-bottom: 30px;
+      a {
+        color: $colorLightBlue;
+        transition: 0.3s;
+        display: flex;
+
+        &:hover {
+          transform: scale(1.15);
+          color: $colorMiddleBlue;
+        }
+      }
+      i {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    // .footer__contacts-title
+
+    &__contacts-title {
+      margin-bottom: 10px;
+      font-size: 42px;
+    }
+
+    // .footer__contacts-phone
+
+    &__contacts-phone {
+    }
+
+    // .footer__contacts-email
+
+    &__contacts-email {
+      font-size: 20px;
+    }
+
+    // .footer__contacts-link
+
+    &__contacts-link {
+    }
+
+    // .footer__map
+
+    &__map {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      border: 4px solid $colorMiddleBlue;
+      border-radius: 5px;
+      iframe{
+        width: 100%;
+        height: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 1070px){
+  .footer{
+    padding: 10px 0 10px 0;
+  }
+  .footer__contacts{
+    width: 600px;
+    div{
+      padding: 10px 0;
+    }
+    a{
+      padding: 10px 0;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .footer {
+    padding: 10px 0;
+    padding-bottom: 5px;
+    background: url(../images/trainers/bgImage.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    // .footer__wrapper
+
+    &__wrapper {
+      border-radius: 5px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba($color: $colorDarkBlue, $alpha: 0.8);
+      padding: 10px;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: space-between;
+      font-size: 16px;
+      color: $colorLightBlue;
+      margin-bottom: 30px;
+      div{
+        padding: 0px 0;
+      }
+      a {
+        padding: 0px 0;
+        color: $colorLightBlue;
+        transition: 0.3s;
+        display: flex;
+
+        &:hover {
+          transform: scale(1.15);
+          color: $colorMiddleBlue;
+        }
+      }
+      i {
+        margin-right: 20px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    // .footer__contacts-title
+
+    &__contacts-title {
+      text-align: center;
+      padding-bottom: 10px;
+      font-size: 22px;
+    }
+
+    // .footer__contacts-phone
+
+    &__contacts-phone {
+    }
+
+    // .footer__contacts-email
+
+    &__contacts-email {
+      font-size: 12px;
+    }
+
+    // .footer__contacts-link
+
+    &__contacts-link {
+    }
+
+    // .footer__map
+
+    &__map {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      border: 4px solid $colorMiddleBlue;
+      border-radius: 5px;
+
+      iframe{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

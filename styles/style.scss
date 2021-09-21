@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  a {
+    text-decoration: none;
+  }
+}
+
+$colorLightBlue: #9dd1f1;
+$colorDarkBlue: #031927;
+$colorMiddleBlue: #508aa8;
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@import "nav";
+@import "slider";
+@import "trainers";
+@import "gallery";
+@import "advantage";
+@import "footer";
+@import "trainer";
+

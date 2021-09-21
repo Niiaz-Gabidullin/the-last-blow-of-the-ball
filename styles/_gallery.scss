@@ -1,0 +1,107 @@
+.gallery {
+  background-color:$colorDarkBlue;
+  
+    // .gallery__wrapper
+
+    &__wrapper {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    // .gallery__item
+
+    &__item {
+        border: 5px solid $colorMiddleBlue;
+        border-radius: 5px;
+        margin: 5px;
+        overflow: hidden;
+        transition: 0.3s;
+        &:hover{
+            transform:scale(1.03);
+            border-color: $colorLightBlue;
+        }
+    }
+    &__item-open{
+        
+        border-radius: 5px;
+        position: absolute;
+        width: 600px;
+        border: 3px solid $colorLightBlue;
+    }
+
+    // .gallery__item-img
+
+    &__item-img {
+        cursor: pointer;
+        width: 320px;
+        display: flex;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+@media(max-width:650px){
+    .gallery__item-open{
+        display: none;
+        border-radius: 5px;
+        position: absolute;
+        width: 600px;
+        border: 3px solid $colorLightBlue ;
+    }
+}
+
+@media(max-width:375px){
+    .gallery {
+        background-color:$colorDarkBlue;
+        
+          // .gallery__wrapper
+      
+          &__wrapper {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              align-items: center;
+              padding: 10px 0;
+          }
+      
+          // .gallery__item
+      
+          &__item {
+              border: 2px solid $colorMiddleBlue;
+              border-radius: 5px;
+              margin: 5px;
+              overflow: hidden;
+              transition: 0.3s;
+              &:hover{
+                  transform:scale(1.03);
+                  border-color: red;
+              }
+          }
+          &__item-open{
+              display: none;
+              border-radius: 5px;
+              position: absolute;
+              width: 600px;
+              border: 3px solid $colorLightBlue ;
+          }
+      
+          // .gallery__item-img
+      
+          &__item-img {
+              cursor: pointer;
+              width: 350px;
+              display: flex;
+              transition: 1s;
+              &:hover{
+                  transform: scale(1.1);
+              }
+          }
+      }
+
+}
+
